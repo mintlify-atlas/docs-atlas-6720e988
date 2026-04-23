@@ -1,0 +1,100 @@
+---
+title: "AI Chatbots and Virtual Assistants for Organizations"
+description: "ByteWise builds AI chatbots and virtual assistants for customer service, HR, and internal operations — trained on your content and available 24/7."
+---
+
+ByteWise builds AI-powered chatbots and virtual assistants that handle real conversations — with customers, employees, or partners — immediately, accurately, and without requiring human intervention for routine interactions. Each implementation is scoped to your specific use case, trained on your content, integrated with your existing channels, and maintained as your needs evolve.
+
+## Use cases
+
+### Customer service
+
+AI assistants handle inbound customer inquiries around the clock, providing immediate responses without queue times. Common applications include:
+
+- Product and service information requests
+- Appointment scheduling and follow-up
+- Frequently asked questions and troubleshooting
+- Escalation routing to human agents when needed
+
+Reducing response time directly improves customer satisfaction scores and reduces the volume of routine queries handled by your support team.
+
+### HR and employee support
+
+Internal virtual assistants help employees find information and complete tasks without waiting for HR or operations staff to respond manually. Typical applications include:
+
+- Policy and benefits inquiries
+- Onboarding information and document guidance
+- Time-off requests and approval routing
+- Internal directory and coordination queries
+
+### Internal coordination
+
+AI assistants can act as operational interfaces — receiving requests, triggering workflows, surfacing relevant documents, or notifying the right people — reducing friction across internal processes.
+
+## ByteWise's own chatbot: a live example
+
+The ByteWise virtual assistant on [bytewise.mx](https://www.bytewise.mx) is a working implementation of the same technology ByteWise deploys for clients.
+
+**How it works:**
+
+- Powered by an **n8n webhook integration** that routes messages to a configured AI workflow
+- Each visitor session is tracked with a unique UUID stored in `sessionStorage`, ensuring conversation continuity within a session without requiring authentication
+- Responses are returned in real time with a 45-second timeout and graceful error handling
+- The assistant is available at all hours, every day of the year
+
+This means when you interact with the chatbot on bytewise.mx, you are experiencing the same architecture ByteWise proposes for client deployments — not a demo or prototype.
+
+<Note>
+  The ByteWise chatbot uses n8n as its workflow automation backbone. ByteWise can implement equivalent solutions using n8n, custom webhook backends, or other orchestration platforms depending on your infrastructure and requirements.
+</Note>
+
+## What's included in a chatbot engagement
+
+<Steps>
+  <Step title="Scoping and use case definition">
+    ByteWise works with your team to define the assistant's scope: which questions it should handle, what tone and persona it should have, which systems it needs to access, and how escalation to human agents should work.
+  </Step>
+  <Step title="Training and knowledge base setup">
+    The assistant is configured with your content — FAQs, product documentation, policies, or structured data — so responses are accurate and relevant to your organization from day one.
+  </Step>
+  <Step title="Integration">
+    ByteWise connects the assistant to your chosen channels: website widget, WhatsApp, internal tools, or API. Integration with CRMs, ticketing systems, or internal databases is included as needed.
+  </Step>
+  <Step title="Testing and launch">
+    Before going live, ByteWise runs structured conversation testing to validate accuracy, edge case handling, and escalation behavior. Your team reviews and approves the assistant before deployment.
+  </Step>
+  <Step title="Ongoing maintenance">
+    After launch, ByteWise monitors conversation quality, updates the knowledge base as your content changes, and refines the assistant's behavior based on real usage patterns.
+  </Step>
+</Steps>
+
+## Frequently asked questions
+
+<AccordionGroup>
+  <Accordion title="What channels can the assistant be deployed on?">
+    ByteWise can deploy assistants on your website (embedded chat widget), WhatsApp Business, internal Slack or Teams workspaces, or as a standalone API that integrates with your existing tools. Channel selection is part of the scoping process.
+  </Accordion>
+  <Accordion title="How does the assistant handle questions it can't answer?">
+    The assistant is configured with escalation logic: when a question falls outside its scope, it acknowledges this clearly and routes the user to the appropriate human contact — via email, phone, or a ticketing system — rather than providing an inaccurate response.
+  </Accordion>
+  <Accordion title="Does the chatbot store conversation data?">
+    Session handling and data retention are configured to your compliance requirements. ByteWise designs chatbot implementations with LFPDPPP data protection obligations in mind, and can provide data flow documentation for your privacy records.
+  </Accordion>
+  <Accordion title="Can the assistant integrate with our CRM or internal systems?">
+    Yes. ByteWise scopes integrations during the design phase. Common integrations include CRMs, ticketing platforms, HR management systems, and document repositories. Custom API connections are supported.
+  </Accordion>
+  <Accordion title="How long does a typical chatbot deployment take?">
+    A focused customer service or internal support assistant typically takes two to four weeks from scoping to live deployment, depending on integration complexity and the size of the knowledge base.
+  </Accordion>
+  <Accordion title="What happens after the assistant is live?">
+    ByteWise provides ongoing maintenance as part of the engagement — updating content, improving response accuracy based on real conversations, and adjusting workflows as your organization's needs change.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Chatbot and virtual assistant implementations are delivered under ByteWise's AI consulting service. Data protection and privacy compliance are considered at every stage of the design process.
+</Note>
+
+<Card title="Request a chatbot consultation" icon="comments" href="/contact">
+  Talk with ByteWise about deploying an AI assistant for your customer service, HR, or internal operations team
+</Card>

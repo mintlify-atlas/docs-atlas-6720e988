@@ -1,0 +1,95 @@
+---
+title: "Cybersecurity Incident Response: How to Prepare Now"
+description: "What to do during and after a security incident, why most organizations are caught unprepared, and how ByteWise supports response and recovery."
+---
+
+A cybersecurity incident is any event that compromises the confidentiality, integrity, or availability of your organization's information assets — whether caused by an external attacker, a malicious insider, or an unintentional error. Ransomware encryption, unauthorized data exfiltration, account takeover, and system sabotage all qualify. The distinguishing characteristic of most incidents is not their technical sophistication but the gap between when they occur and when the organization discovers them. By then, the window for effective containment has often closed. ByteWise helps organizations reduce that gap through preparation, active testing, and expert response support.
+
+<Warning>
+  Most organizations do not detect an attack until after the damage is done. Attackers dwell in compromised environments for weeks or months before triggering visible harm — exfiltrating data, mapping systems, and establishing persistence while going undetected. Preparation is the only reliable counter.
+</Warning>
+
+## Questions to ask yourself now
+
+Before an incident occurs, honest answers to these questions reveal your actual readiness:
+
+<AccordionGroup>
+  <Accordion title="Would you know what was taken?" defaultOpen={true}>
+    If an attacker exfiltrated data from your systems tonight, could you identify what was accessed, which records were copied, and who the affected individuals or clients are? Without a data inventory, access logs, and endpoint visibility, you cannot answer this question — and you cannot meet breach notification obligations that may apply under the LFPDPPP or contract terms.
+  </Accordion>
+  <Accordion title="Would you have evidence to act?" defaultOpen={true}>
+    Legal, insurance, and regulatory responses to a security incident require forensic evidence — not assumptions. If your systems do not generate and retain sufficient logs, if timestamps are unreliable, or if affected systems have already been wiped or restored, you lose the ability to establish what happened, when, and how. Evidence that does not exist cannot be collected after the fact.
+  </Accordion>
+  <Accordion title="Would you discover the problem before it's too late?" defaultOpen={true}>
+    Many organizations learn about a breach from an external source — a client, a regulatory notice, or a public disclosure by the attacker — rather than from their own monitoring. If you have no detection capability, no one is watching. The question is not whether an incident will occur, but whether you will find out in time to limit the impact.
+  </Accordion>
+</AccordionGroup>
+
+## The 4 phases of incident response
+
+Effective incident response follows a defined lifecycle. Organizations that improvise under pressure make costly mistakes — destroying evidence, missing containment steps, or prematurely declaring recovery while the threat persists.
+
+<Steps>
+  <Step title="Detection and triage">
+    The incident is identified — through an alert, an anomaly detected by monitoring tools, a report from a user, or notification from an external party. The immediate priority is triage: confirming that an incident has occurred, classifying its severity, and activating the appropriate response team. Speed matters here — delayed detection extends the attacker's window of access.
+  </Step>
+  <Step title="Containment">
+    Once the incident is confirmed, the goal is to stop it from spreading. Containment actions depend on the incident type and may include isolating affected systems from the network, revoking compromised credentials, blocking malicious IP addresses, or suspending services. Short-term containment prioritizes stopping the bleeding; long-term containment involves stabilizing the environment before eradication begins.
+  </Step>
+  <Step title="Eradication and recovery">
+    After containment, the threat must be removed — malware deleted, unauthorized access revoked, vulnerabilities patched. Systems are then restored from clean backups or rebuilt from known-good states. Recovery must be validated before systems are returned to production: restoring an infected backup resets the clock rather than closing the incident.
+  </Step>
+  <Step title="Post-incident analysis">
+    When the incident is closed, a structured review extracts lessons. What was the root cause? What controls failed or were absent? How long did the attacker have access? What would have reduced the impact? The post-incident report informs updates to your incident response plan, security controls, and monitoring configuration — converting a costly event into an improvement opportunity.
+  </Step>
+</Steps>
+
+## How ByteWise supports incident response
+
+ByteWise approaches incident response through two complementary lenses: preventing incidents through offensive testing, and resolving them through forensic analysis.
+
+<Tabs>
+  <Tab title="Penetration testing (prevention)">
+    What you do not test, you cannot prevent. Penetration testing simulates real attacker techniques against your systems, applications, and network — before an adversary does. ByteWise's penetration testing engagements identify exploitable vulnerabilities, weak configurations, and logical flaws in access controls that standard security scanning misses.
+
+    The output is a prioritized remediation report that your team can act on directly. Each finding includes a description of the vulnerability, evidence of exploitation, risk rating, and recommended fix. Retesting confirms that remediations are effective.
+
+    Penetration testing is not a one-time activity. As systems change, new vulnerabilities appear. ByteWise recommends periodic testing aligned to major system changes, new application deployments, and compliance requirements.
+  </Tab>
+  <Tab title="Digital forensics (resolution)">
+    What you do not analyze, you cannot resolve. When an incident occurs, digital forensics establishes the facts: what systems were compromised, how access was obtained, what actions the attacker took, what data was accessed or exfiltrated, and when each event occurred.
+
+    ByteWise's forensic investigations produce technically rigorous, legally valid reports — with documented chain of custody, timestamped evidence, and findings expressed in plain language for legal, regulatory, and executive audiences.
+
+    Forensic evidence supports insurance claims, regulatory notifications, legal proceedings against responsible parties, and internal decisions about remediation scope. Acting without evidence means acting on assumptions — with consequences that may be worse than the incident itself.
+  </Tab>
+</Tabs>
+
+## Building operational continuity
+
+Incident response capability is inseparable from business continuity planning. The questions an incident forces you to answer — can you keep operating, can you recover your data, how long will recovery take — should be answered before the incident, not during it.
+
+<CardGroup cols={3}>
+  <Card title="Can you keep operating?" icon="building">
+    Would your administrative functions continue normally if your systems went offline? Are your critical files, applications, and communications available from a secondary location? Organizations that depend entirely on a single environment with no fallback stop operating the moment that environment is compromised.
+  </Card>
+  <Card title="Can you recover your data?" icon="database">
+    Do you have a documented backup and recovery process with tested recovery procedures? How long would restoration take — hours, days, weeks? A backup that has never been tested is an assumption, not a guarantee. Recovery Time Objectives (RTOs) need to be defined and validated before they are needed.
+  </Card>
+  <Card title="Are you actually protected?" icon="shield">
+    Many organizations believe they are protected until they face a real incident. Controls that exist on paper but are not tested, monitored, or maintained degrade over time. ByteWise's periodic testing and audit services verify that your defenses remain effective — not just documented.
+  </Card>
+</CardGroup>
+
+<Tip>
+  ByteWise recommends that every organization maintain a written incident response plan that designates a response team, defines escalation criteria, includes contact information for legal and regulatory notification, and specifies the circumstances under which forensic investigation is triggered. A plan that exists before an incident dramatically reduces response time and decision-making errors under pressure.
+</Tip>
+
+<CardGroup cols={2}>
+  <Card title="Penetration testing" icon="magnifying-glass" href="/services/pentesting">
+    Find exploitable vulnerabilities before attackers do — with structured testing and a prioritized remediation report.
+  </Card>
+  <Card title="Digital forensics" icon="folder-open" href="/services/digital-forensics">
+    Investigate incidents with forensic rigor — producing legally valid evidence and clear findings for every stakeholder.
+  </Card>
+</CardGroup>

@@ -1,28 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "name": "ByteWise",
+  "projectType": "saas",
+  "projectName": "ByteWise",
+  "projectDescription": "ByteWise is a Mexican cybersecurity and AI consulting firm offering integrated services including ISO 27001 compliance, data protection, penetration testing, digital forensics, IT outsourcing, AI implementation, and custom software development.",
   "theme": "luma",
-  "colors": {
-    "primary": "#747474",
-    "light": "#b5b5b5",
-    "dark": "#0b0b0b"
-  },
-  "favicon": "https://media.brand.dev/8bb572f5-18a7-4a94-be28-065f42fd48c9.svg",
-  "logo": {
-    "light": "https://media.brand.dev/a2d5ce6a-e228-43ef-b15c-6aaf770efc04.svg",
-    "dark": "https://media.brand.dev/a2d5ce6a-e228-43ef-b15c-6aaf770efc04.svg"
-  },
-  "navbar": {
-    "primary": {
-      "type": "github",
-      "href": "https://github.com/bytewisemx/bytewiseweb"
-    }
-  },
-  "footer": {
-    "socials": {
-      "github": "https://github.com/bytewisemx/bytewiseweb"
-    }
-  },
+  "primaryColor": "#747474",
+  "lightColor": "#0b0b0b",
+  "darkColor": "#b5b5b5",
   "navigation": {
     "tabs": [
       {
@@ -87,5 +70,28 @@
         ]
       }
     ]
-  }
+  },
+  "keyFeatures": [
+    "ISO/IEC 27001:2022 consulting and certification support",
+    "LFPDPPP data protection compliance (Mexico federal law)",
+    "Penetration testing and vulnerability analysis",
+    "Digital forensics with legal validity",
+    "IT outsourcing and managed technology services",
+    "AI consulting: chatbots, process automation, intelligent campaigns",
+    "Custom web and systems development",
+    "Free initial cybersecurity diagnostic",
+    "AI-powered customer chatbot (n8n webhook integration)",
+    "Operational continuity and incident response planning"
+  ],
+  "publicApiSurface": [
+    "ChatBot component (n8n webhook integration at /webhook endpoint)",
+    "Contact form (FormSubmit API integration)",
+    "MagicBento service cards display component",
+    "CardSwap animated card component",
+    "Carousel values/workflow component",
+    "ScrollReveal text animation component",
+    "ElectricBorder animated button border component",
+    "StaggeredMenu navigation component",
+    "TextType animated typing component"
+  ]
 }
